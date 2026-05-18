@@ -1,4 +1,4 @@
-const getReservedPlaces = (priceStandart, priceVip) => {
+/*const getReservedPlaces = (priceStandart, priceVip) => {
   const buyingScheme = document.querySelector('.buying-scheme__config');
   const reservedPlaces = [];
 
@@ -19,6 +19,11 @@ const getReservedPlaces = (priceStandart, priceVip) => {
 
     return reservedPlaces;
   }
+};
+
+export default getReservedPlaces;*/
+const getReservedPlaces = (selectedPlaces) => {
+  return selectedPlaces;
 };
 
 export default getReservedPlaces;

@@ -3,8 +3,9 @@ import createRequest from '../api/createRequest.js';
 
 const onReserve = (event, ticketDataForRequest, ticketData, navigate) => {
   event.preventDefault();
-  const reservedPlaces = getReservedPlaces(ticketData.priceStandart, ticketData.priceVip);
-
+  //const reservedPlaces = getReservedPlaces(ticketData.priceStandart, ticketData.priceVip);
+  const reservedPlaces = getReservedPlaces(selectedPlaces);
+  
   if (reservedPlaces.length === 0) {
     alert('Места не выбраны');
     return;
